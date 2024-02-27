@@ -10,7 +10,7 @@ let showWeek = function (arr) {
     for (let i=0; i<arr.length; i++)
         console.log(arr[i]);       
 };
-
+//дни недели через if
 if (lang=='ru') {
     showWeek(week[0]); 
 } else if (lang=='en'){
@@ -18,7 +18,7 @@ if (lang=='ru') {
 } else {
     console.log ('Что то пошло не так');
 }
-
+//дни недели через switch-case
 switch (lang) {
     case 'ru':
         showWeek(week[0]);
@@ -29,3 +29,15 @@ switch (lang) {
     default:
         console.log('Что то пошло не так');
 }
+//дни недели без if и switch
+showWeek(week[+(lang<='en')]);
+
+let namePerson = 'Cthutq';
+
+(namePerson == "Артем") ? console.log("Директор") : (namePerson == "Александр") ? console.log("Преподаватель") : console.log("Студент");
+
+
+
+
+
+
