@@ -16,7 +16,6 @@ samplingOfNumbers(numArray);
 
 
 
-
 //задание 2. Вывести все простые числа от 1 до 100
 
 let primeNumbers = function(start, end){
