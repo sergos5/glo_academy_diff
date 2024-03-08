@@ -1,18 +1,20 @@
 'use strict';
 
-//Проверка на число и вывод числовым значением
+//Вывести на экран все дни недели
 
-let arg; 
+const weekDeys = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота','воскресенье'];
 
-const isNumber = function (num) {
-    return !isNaN(parseFloat(num)) && isFinite(num);
-};
+const date = new Date();
+const deyNumber = date.getDay();
 
-do {
-    arg = prompt( 'введите число');      
-}   while (!isNumber(arg));
-arg = +arg;
 
-console.log (arg);
+weekDeys.forEach (function(item, index) {
+    let dey = item +'<br>';
+    if (index+1===deyNumber) dey = '<b>' + dey + '</b>';
+    if (index>4) dey = '<i>' + dey + '</i>';
+    document.write(dey);
+});
+
+
 
 
